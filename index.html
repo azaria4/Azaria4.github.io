@@ -1,0 +1,105 @@
+    <! DOCTYPE html>
+    <html>
+        <head>
+           <title> THE TRAIL TROUPE </title>
+           <meta name="viewport" content="width=device width, initial-scale=1.0">
+           <link href="css/bootstrap.css" rel="stylesheet" >
+           <link href="css/fonts.css" rel="stylesheet" >
+           <link href="css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">
+           <script src="js/bootstrapjquery.js"></script>
+           <script src="js/bootstrap-formhelpers.js"></script>
+           <script src="js/bootstrap.js"> </script>
+           <script src="js/proper.js"> </script>
+          
+           <style>
+               .jumbotron {
+                  background: #0004;
+                  width:  center;
+                  height: center;
+                  color: #fff;
+                   
+                }
+
+                .bfh-datepicker{
+                    background-color:#fff;
+                    
+                }
+
+               body {
+                 background-image: url("pic1.jpg") ;
+                 background-size:     cover;              
+                 background-repeat:   no-repeat;
+                 background-position: center center;
+           
+               }
+
+              
+           </style>
+            
+       </head>
+
+        <body>
+           
+            <div class="container h-100">
+            
+                 <div class="row h-100 justify-content-center align-items-center">
+                  <form class="col-12">
+                   <div>
+                   <h2 class="solid"><center>Registration Form </center></h2>
+                   </div>
+                   <div>
+                   <p class="lead"><center>Join THE TRAIL TROUPE today and experience greatness </center></p>
+                   </div>
+                   
+                   
+                     <div class="jumbotron">
+                        <div class="form-group"> 
+                              <label for="firstname" class="col-sm-4 control-label">Name: *</label> 
+                              <div class="col-sm-15"> 
+                                     <input type="text" class="form-control" id="inputName" /> </div></div>
+          
+                          <div class="form-group"> 
+                                <label for="lastname" class="col-sm-4 control-label">Date of birth: *</label> 
+                                <div class="bfh-datepicker col-sm-15" data-format="y-m-d" data-date="" changeMonth="true" changeYear="true">
+                                    </div>
+                                        <div class="form-group"></div>
+                                        <div class="form-group">
+                                                <label class="col-sm-4 control-label">Email: *</label>
+                                                       <div class="col-sm-15"> 
+                                                            <input type="email" class="form-control" id="inputEmail"> </div></div>
+                                           
+                                            <div class="form-group"> 
+                                                  <label for="inputPassword" class="col-sm-4 control-label">Password: *</label> 
+                                                       <div class="col-sm-15">
+                                                            <input type="password" class="form-control" id="inputPassword">                                                          </div>
+                                              </div>
+                                            
+                          <div class=" form-group ">
+                                   <div class="col-sm-offset-2 col-sm-10 " >    
+                                    <button type="button" class="btn btn-success row " id="success" >Submit</button> 
+                                    
+                              </div> 
+                        </div>
+                    
+                    <script type="text/javascript"> 
+                        $(document).ready(function() {
+                            $('#success').on("click",function (e) {
+                                e.preventDefault()
+                               alert(" √ Successful submission! ")
+                            })
+                        });
+                   
+                        
+                    </script>
+        
+                  </form>
+                  
+                </div>
+                
+                
+          
+            </div>
+                  
+        </body>
+
+    </html>
